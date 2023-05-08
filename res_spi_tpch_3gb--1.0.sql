@@ -31,17 +31,11 @@ LANGUAGE C STRICT;
 
 
 CREATE FUNCTION reservoir_sampler_tpch_3gb(sampleSize bigint, tablename text, otherAttribue text,groupby text) 
-RETURNS TABLE (b int, c numeric, d int, a numeric) 
+RETURNS TABLE (b int, c int , d int, a int) 
 AS 'MODULE_PATHNAME','reservoir_sampler_tpch_3gb' 
 LANGUAGE C STRICT;
-/*
-CREATE FUNCTION reservoir_sampler2_tpch(sampleSize int, tablename text, otherAttribue text,groupby text) 
-RETURNS TABLE (b int, c int, a int[]) 
-AS 'MODULE_PATHNAME','reservoir_sampler2_tpch' 
-LANGUAGE C STRICT;
-/*
 
-
+/*
 CREATE FUNCTION res_tras_crimes2_c(Datum, int64)
         RETURNS Datum
         AS 'MODULE_PATHNAME', 'res_tras_crimes'

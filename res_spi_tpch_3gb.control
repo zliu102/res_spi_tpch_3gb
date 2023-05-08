@@ -1,0 +1,5 @@
+# res_spi_tpch_3gb extension
+comment = 'search for an element in an array using binary search'
+default_version = '1.0'
+module_pathname = '$libdir/res_spi_tpch_3gb'
+relocatable = true

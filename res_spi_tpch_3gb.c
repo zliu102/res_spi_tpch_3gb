@@ -341,8 +341,8 @@ reservoir_sampler_tpch_3gb(PG_FUNCTION_ARGS)
     bool initialized = false;
     for(row = 0; row < SPI_processed; row++){
      
-        int attnum1 = SPI_fnumber(SPI_tuptable->tupdesc, "l_suppkey");
-        int attnum2 = SPI_fnumber(SPI_tuptable->tupdesc, "l_tax");
+        int attnum1 = SPI_fnumber(SPI_tuptable->tupdesc, "l_partkey");
+        int attnum2 = SPI_fnumber(SPI_tuptable->tupdesc, "l_suppkey");
         int attnum3 = SPI_fnumber(SPI_tuptable->tupdesc, "l_linenumber");
         char* value1 = SPI_getvalue((SPI_tuptable->vals)[row], SPI_tuptable->tupdesc, attnum1);
         char* value2 = SPI_getvalue((SPI_tuptable->vals)[row], SPI_tuptable->tupdesc, attnum2);

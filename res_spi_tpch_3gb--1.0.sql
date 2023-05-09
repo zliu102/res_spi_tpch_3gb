@@ -31,7 +31,7 @@ LANGUAGE C STRICT;
 
 
 CREATE FUNCTION reservoir_sampler_tpch_3gb(sampleSize bigint, tablename text, otherAttribue text,groupby text) 
-RETURNS TABLE (l_suppkey int, l_discount numeric , l_tax numeric, l_orderkey int) 
+RETURNS TABLE (l_suppkey int, l_discount numeric , l_tax numeric, l_extendedprice int) 
 AS 'MODULE_PATHNAME','reservoir_sampler_tpch_3gb' 
 LANGUAGE C STRICT;
 
